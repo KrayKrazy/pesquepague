@@ -113,6 +113,29 @@ document.addEventListener('DOMContentLoaded', () => {
   sections.forEach(s => sectionObserver.observe(s));
 
 
+  /* ── SWIPER MENU INITIALIZATION ──────────────────────────── */
+  const swiperEl = document.querySelector('.menuSwiper');
+  if (swiperEl && typeof Swiper !== 'undefined') {
+    new Swiper('.menuSwiper', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      loop: false,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
+  }
+
+
   /* ── GALLERY LIGHTBOX (Simple) ───────────────────────────── */
   const galleryItems = document.querySelectorAll('.gallery-item');
 

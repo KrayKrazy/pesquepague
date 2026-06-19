@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -51,7 +52,7 @@
         <img src="images/logo.jpg" alt="Logo Pesque e Pague Fortaleza" class="hero-logo-img" />
       </div>
       <p class="hero-eyebrow">✦ Sem taxa de entrada · Brazlândia, DF ✦</p>
-      <h1 class="hero-title">Pesque, Relaxe<br /><em>e Saboreie</em></h1>
+      <h1 class="hero-title">Pesque, Relaxe<br /> <em>e Saboreie</em></h1>
       <p class="hero-subtitle">Comida caseira 🥘 · Cerveja gelada 🍺 · Muita pescaria 🎣<br />O destino da família no Distrito Federal!</p>
       <div class="hero-actions">
         <a href="#cardapio" class="btn-primary" id="hero-cta-menu">
@@ -141,340 +142,65 @@
   </section>
 
   <!-- ============================================================
-       PESCA ESPORTIVA — Seção Dedicada
+       PESCA ESPORTIVA — Seção Dedicada (Redesign)
   ============================================================ -->
   <section class="pesca-section" id="pesca">
-    <div class="pesca-bg-img">
-      <img src="images/pesca_esportiva.jpg" alt="Pesca esportiva Pesque e Pague Fortaleza Brazlândia" />
-      <div class="pesca-bg-overlay"></div>
-    </div>
-    <div class="container pesca-container">
-      <div class="pesca-content reveal-left">
-        <span class="section-eyebrow light">🎣 Atividade Principal</span>
-        <h2 class="section-title light">Pesca Esportiva<br /><em>Sem Taxa de Entrada!</em></h2>
-        <p class="pesca-desc">Desfrute da emoção de pescar em nossas lagoas rodeadas de natureza exuberante. Com água limpa e lagoas bem abastecidas, você tem a garantia de uma pescaria incrível!</p>
-        <div class="pesca-especies">
-          <h4>🐟 Espécies disponíveis:</h4>
-          <div class="especies-grid">
-            <div class="especie-tag">🐠 Tilápia</div>
-            <div class="especie-tag">🐡 Tambaqui</div>
-            <div class="especie-tag">🐟 Surubim</div>
-            <div class="especie-tag">🎣 Carpa</div>
-            <div class="especie-tag">🐠 Pacu</div>
-            <div class="especie-tag">🐡 Piau</div>
+    <div class="container">
+      <div class="pesca-grid">
+        <div class="pesca-content reveal-left">
+          <span class="section-eyebrow">🎣 Atividade Principal</span>
+          <h2 class="section-title">Pesca Esportiva<br /> <em>Sem Taxa de Entrada!</em></h2>
+          <p class="pesca-desc">Desfrute da emoção de pescar em nossas lagoas rodeadas de natureza exuberante. Com água limpa e lagoas bem abastecidas, você tem a garantia de uma pescaria incrível!</p>
+          
+          <div class="pesca-regras">
+            <div class="pesca-regra">
+              <div class="regra-icon">✅</div>
+              <div><strong>Entrada gratuita</strong><p>Pague apenas pelo peixe pescado</p></div>
+            </div>
+            <div class="pesca-regra">
+              <div class="regra-icon">🚫</div>
+              <div><strong>Proibido soltar o peixe</strong><p>Todo peixe capturado deve ser pago</p></div>
+            </div>
+          </div>
+          
+          <div class="pesca-especies">
+            <h4>🐟 Espécies disponíveis:</h4>
+            <div class="especies-grid">
+              <div class="especie-tag">🐠 Tilápia</div>
+              <div class="especie-tag">🐡 Tambaqui</div>
+              <div class="especie-tag">🐟 Surubim</div>
+              <div class="especie-tag">🎣 Carpa</div>
+              <div class="especie-tag">🐠 Pacu</div>
+              <div class="especie-tag">🐡 Piau</div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5561998438509?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20pesca%20no%20Pesque%20e%20Pague%20Fortaleza" class="btn-primary" style="margin-top:24px" target="_blank" rel="noopener">
+            Informações sobre Pesca
+          </a>
+        </div>
+        <div class="pesca-image-wrapper reveal-right">
+          <img src="images/pesca_esportiva.jpg" alt="Equipamento de Pesca Esportiva" class="pesca-img-featured" loading="lazy" />
+          <div class="pesca-glass-badge">
+            <div class="glass-icon">⏱️</div>
+            <div>
+              <strong>Tempo livre</strong>
+              <span>Fique o quanto quiser!</span>
+            </div>
           </div>
         </div>
-        <div class="pesca-regras">
-          <div class="pesca-regra">
-            <div class="regra-icon">✅</div>
-            <div><strong>Entrada gratuita</strong><p>Pague apenas pelo peixe pescado</p></div>
-          </div>
-          <div class="pesca-regra">
-            <div class="regra-icon">🚫</div>
-            <div><strong>Proibido soltar o peixe</strong><p>Todo peixe capturado deve ser pago</p></div>
-          </div>
-          <div class="pesca-regra">
-            <div class="regra-icon">⏱️</div>
-            <div><strong>Fique quanto quiser</strong><p>Pessoas ficam 1,5 a 4 horas em média</p></div>
-          </div>
-        </div>
-        <a href="https://wa.me/5561998438509?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20pesca%20no%20Pesque%20e%20Pague%20Fortaleza" class="btn-whatsapp-large" id="pesca-whatsapp" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          Informações sobre Pesca
-        </a>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       CARDÁPIO VISUAL
+       CARDÁPIO VISUAL (Slider Premium)
   ============================================================ -->
   <section class="cardapio-section" id="cardapio">
     <div class="container">
       <div class="section-header text-center reveal-up">
         <span class="section-eyebrow">Bar &amp; Restaurante</span>
         <h2 class="section-title">Nosso <em>Cardápio</em></h2>
-        <p class="section-subtitle">Comida caseira nordestina · Pratos frescos preparados na hora</p>
-      </div>
-
-      <!-- Fotos destaque -->
-      <div class="menu-photo-row reveal-up">
-        <div class="menu-photo-item">
-          <img src="images/imgi_6_625188161_18084743812899574_2363783329406083265_n.jpg" alt="Peixe frito com acompanhamentos" loading="lazy" />
-          <span>Peixe Frito Inteiro</span>
-        </div>
-        <div class="menu-photo-item featured">
-          <img src="images/imgi_7_627674853_18255272047290571_3708360859054448121_n.jpg" alt="Filé empanado" loading="lazy" />
-          <span>Filé Empanado</span>
-        </div>
-        <div class="menu-photo-item">
-          <img src="images/imgi_8_622057594_18073228265106264_9011134293181083772_n.jpg" alt="Drinks tropicais" loading="lazy" />
-          <span>Drinks &amp; Bebidas</span>
-        </div>
-      </div>
-
-      <!-- Navegação de categorias -->
-      <div class="cardapio-nav reveal-up">
-        <button class="cat-btn active" data-cat="peixes" id="btn-peixes">🐟 Peixes</button>
-        <button class="cat-btn" data-cat="moquecas" id="btn-moquecas">🍲 Moquecas</button>
-        <button class="cat-btn" data-cat="carnes" id="btn-carnes">🍗 Carnes</button>
-        <button class="cat-btn" data-cat="porcoes" id="btn-porcoes">🍟 Porções</button>
-        <button class="cat-btn" data-cat="cervejas" id="btn-cervejas">🍺 Cervejas &amp; Vinhos</button>
-        <button class="cat-btn" data-cat="drinks" id="btn-drinks">🥃 Doses</button>
-        <button class="cat-btn" data-cat="aguas" id="btn-aguas">💧 Água &amp; Refri</button>
-      </div>
-
-      <!-- ─── PEIXES ─────────────────────────────────────────── -->
-      <div class="cat-panel active" id="cat-peixes">
-        <div class="visual-menu-grid">
-          <div class="vm-card highlight">
-            <div class="vm-card-img">
-              <img src="images/imgi_6_625188161_18084743812899574_2363783329406083265_n.jpg" alt="Tilápia" loading="lazy" />
-              <div class="vm-badge">⭐ Top</div>
-            </div>
-            <div class="vm-card-body">
-              <div class="vm-num">01</div>
-              <h3>Tilápia Sem Espinhas</h3>
-              <p>Acompanha farofa</p>
-              <div class="vm-price">R$ 89,00</div>
-            </div>
-          </div>
-          <div class="vm-card">
-            <div class="vm-card-img">
-              <img src="images/imgi_6_625188161_18084743812899574_2363783329406083265_n.jpg" alt="Tilápia em Posta" loading="lazy" />
-            </div>
-            <div class="vm-card-body">
-              <div class="vm-num">02</div>
-              <h3>Tilápia em Posta</h3>
-              <p>Acompanha farofa</p>
-              <div class="vm-price">R$ 79,00</div>
-            </div>
-          </div>
-          <div class="vm-card highlight">
-            <div class="vm-card-img">
-              <img src="images/imgi_7_627674853_18255272047290571_3708360859054448121_n.jpg" alt="Tambaqui" loading="lazy" />
-              <div class="vm-badge">⭐ Top</div>
-            </div>
-            <div class="vm-card-body">
-              <div class="vm-num">03</div>
-              <h3>Tambaqui Sem Espinhas</h3>
-              <p>Acompanha farofa</p>
-              <div class="vm-price">R$ 89,00</div>
-            </div>
-          </div>
-          <div class="vm-card">
-            <div class="vm-card-img">
-              <img src="images/imgi_7_627674853_18255272047290571_3708360859054448121_n.jpg" alt="Tambaqui Posta" loading="lazy" />
-            </div>
-            <div class="vm-card-body">
-              <div class="vm-num">04</div>
-              <h3>Tambaqui em Posta</h3>
-              <p>Acompanha farofa</p>
-              <div class="vm-price">R$ 79,00</div>
-            </div>
-          </div>
-          <div class="vm-card">
-            <div class="vm-card-img">
-              <img src="images/imgi_6_625188161_18084743812899574_2363783329406083265_n.jpg" alt="Isca de Tilápia" loading="lazy" />
-            </div>
-            <div class="vm-card-body">
-              <div class="vm-num">10</div>
-              <h3>Isca de Tilápia</h3>
-              <p>Filé</p>
-              <div class="vm-price">R$ 65,00</div>
-            </div>
-          </div>
-          <div class="vm-card">
-            <div class="vm-card-img">
-              <img src="images/imgi_6_625188161_18084743812899574_2363783329406083265_n.jpg" alt="Camarão" loading="lazy" />
-            </div>
-            <div class="vm-card-body">
-              <div class="vm-num">09</div>
-              <h3>Camarão ao Alho e Óleo</h3>
-              <p>Porção generosa</p>
-              <div class="vm-price">R$ 89,00</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ─── MOQUECAS ──────────────────────────────────────── -->
-      <div class="cat-panel" id="cat-moquecas">
-        <div class="moqueca-hero reveal-up">
-          <div class="moqueca-img">
-            <img src="images/imgi_6_625188161_18084743812899574_2363783329406083265_n.jpg" alt="Moqueca de Surubim" loading="lazy" />
-          </div>
-          <div class="moqueca-info">
-            <span class="section-eyebrow">Especialidade da Casa</span>
-            <h3>Moqueca de Surubim</h3>
-            <p>Um clássico nordestino preparado com carinho. Servida com arroz, pirão e salada. Escolha o tamanho ideal para o seu grupo!</p>
-            <div class="moqueca-sizes">
-              <div class="moqueca-size">
-                <div class="size-label">Pequena</div>
-                <div class="size-desc">2 Pessoas · arroz, pirão e salada</div>
-                <div class="size-price">R$ 125,00</div>
-              </div>
-              <div class="moqueca-size featured-size">
-                <div class="size-badge">Mais Pedida</div>
-                <div class="size-label">Média</div>
-                <div class="size-desc">3 Pessoas · arroz, pirão e salada</div>
-                <div class="size-price">R$ 145,00</div>
-              </div>
-              <div class="moqueca-size">
-                <div class="size-label">Grande</div>
-                <div class="size-desc">4 Pessoas · arroz, pirão e salada</div>
-                <div class="size-price">R$ 169,00</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ─── CARNES ─────────────────────────────────────────── -->
-      <div class="cat-panel" id="cat-carnes">
-        <div class="visual-menu-grid">
-          <div class="vm-card highlight">
-            <div class="vm-card-img">
-              <img src="images/imgi_6_625188161_18084743812899574_2363783329406083265_n.jpg" alt="Galinha Caipira" loading="lazy" />
-              <div class="vm-badge gold">🏆 Especial</div>
-            </div>
-            <div class="vm-card-body">
-              <div class="vm-num">08</div>
-              <h3>Galinha Caipira</h3>
-              <p>Arroz, feijão, pirão e salada</p>
-              <div class="vm-price">R$ 199,00</div>
-            </div>
-          </div>
-          <div class="vm-card">
-            <div class="vm-card-img">
-              <img src="images/imgi_7_627674853_18255272047290571_3708360859054448121_n.jpg" alt="Carne de Sol Grande" loading="lazy" />
-            </div>
-            <div class="vm-card-body">
-              <div class="vm-num">11</div>
-              <h3>Carne de Sol c/ Mandioca</h3>
-              <p>Grande</p>
-              <div class="vm-price">R$ 99,00</div>
-            </div>
-          </div>
-          <div class="vm-card">
-            <div class="vm-card-img">
-              <img src="images/imgi_7_627674853_18255272047290571_3708360859054448121_n.jpg" alt="Carne de Sol Meia" loading="lazy" />
-            </div>
-            <div class="vm-card-body">
-              <div class="vm-num">12</div>
-              <h3>Carne de Sol c/ Mandioca</h3>
-              <p>Meia porção</p>
-              <div class="vm-price">R$ 79,00</div>
-            </div>
-          </div>
-          <div class="vm-card">
-            <div class="vm-card-img">
-              <img src="images/imgi_6_625188161_18084743812899574_2363783329406083265_n.jpg" alt="Frango a Passarinho" loading="lazy" />
-            </div>
-            <div class="vm-card-body">
-              <div class="vm-num">15</div>
-              <h3>Frango a Passarinho</h3>
-              <p>Crocante e saboroso</p>
-              <div class="vm-price">R$ 59,00</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ─── PORÇÕES ────────────────────────────────────────── -->
-      <div class="cat-panel" id="cat-porcoes">
-        <div class="porcoes-list-grid">
-          <div class="porcao-row"><span class="p-num">13</span><div class="p-info"><strong>Batata Frita</strong><small>Porção inteira</small></div><span class="p-price">R$ 24,90</span></div>
-          <div class="porcao-row"><span class="p-num">14</span><div class="p-info"><strong>Batata Frita</strong><small>Meia porção</small></div><span class="p-price">R$ 18,90</span></div>
-          <div class="porcao-row"><span class="p-num">16</span><div class="p-info"><strong>Mandioca Frita</strong><small>Porção inteira</small></div><span class="p-price">R$ 24,90</span></div>
-          <div class="porcao-row"><span class="p-num">17</span><div class="p-info"><strong>Mandioca Frita</strong><small>Meia porção</small></div><span class="p-price">R$ 18,90</span></div>
-          <div class="porcao-row destaque"><span class="p-num">18</span><div class="p-info"><strong>Porção de Arroz</strong><small>4 Pessoas</small></div><span class="p-price">R$ 21,90</span></div>
-          <div class="porcao-row"><span class="p-num">19</span><div class="p-info"><strong>Porção de Arroz</strong><small>2 Pessoas</small></div><span class="p-price">R$ 15,90</span></div>
-          <div class="porcao-row"><span class="p-num">20</span><div class="p-info"><strong>Porção de Feijão</strong><small>4 Pessoas</small></div><span class="p-price">R$ 21,90</span></div>
-          <div class="porcao-row"><span class="p-num">21</span><div class="p-info"><strong>Porção de Feijão</strong><small>2 Pessoas</small></div><span class="p-price">R$ 15,90</span></div>
-          <div class="porcao-row"><span class="p-num">22</span><div class="p-info"><strong>Porção de Salada</strong><small>4 Pessoas</small></div><span class="p-price">R$ 21,90</span></div>
-          <div class="porcao-row"><span class="p-num">23</span><div class="p-info"><strong>Porção de Salada</strong><small>2 Pessoas</small></div><span class="p-price">R$ 15,90</span></div>
-        </div>
-      </div>
-
-      <!-- ─── CERVEJAS & VINHOS ──────────────────────────────── -->
-      <div class="cat-panel" id="cat-cervejas">
-        <div class="bebidas-columns">
-          <div class="bebidas-col">
-            <div class="bebidas-col-title">🍺 Cervejas</div>
-            <div class="porcoes-list-grid">
-              <div class="porcao-row"><span class="p-num">24</span><div class="p-info"><strong>Cerveja Lata</strong><small>a partir de</small></div><span class="p-price">R$ 5,00</span></div>
-              <div class="porcao-row destaque"><span class="p-num">25</span><div class="p-info"><strong>Cerveja 600 ml</strong><small>a partir de</small></div><span class="p-price">R$ 13,00</span></div>
-              <div class="porcao-row"><span class="p-num">26</span><div class="p-info"><strong>Long Neck</strong><small>a partir de</small></div><span class="p-price">R$ 8,00</span></div>
-              <div class="porcao-row"><span class="p-num">27</span><div class="p-info"><strong>Cerveja Caracu Lata</strong></div><span class="p-price">R$ 7,00</span></div>
-              <div class="porcao-row"><span class="p-num">28</span><div class="p-info"><strong>Cerveja s/ Álcool Lata</strong></div><span class="p-price">R$ 6,00</span></div>
-              <div class="porcao-row"><span class="p-num">29</span><div class="p-info"><strong>Long Neck s/ Álcool</strong></div><span class="p-price">R$ 10,00</span></div>
-            </div>
-          </div>
-          <div class="bebidas-col">
-            <div class="bebidas-col-title">🍷 Vinhos</div>
-            <div class="porcoes-list-grid">
-              <div class="porcao-row"><span class="p-num">43</span><div class="p-info"><strong>Pérgola</strong><small>Garrafa</small></div><span class="p-price">R$ 45,00</span></div>
-              <div class="porcao-row"><span class="p-num">44</span><div class="p-info"><strong>Pérgola</strong><small>Tulipa</small></div><span class="p-price">R$ 10,00</span></div>
-              <div class="porcao-row"><span class="p-num">45</span><div class="p-info"><strong>Moranza</strong><small>Garrafa</small></div><span class="p-price">R$ 30,00</span></div>
-              <div class="porcao-row"><span class="p-num">46</span><div class="p-info"><strong>Moranza</strong><small>Tulipa</small></div><span class="p-price">R$ 7,00</span></div>
-              <div class="porcao-row destaque"><span class="p-num">47</span><div class="p-info"><strong>Marcos James</strong><small>Garrafa</small></div><span class="p-price">R$ 50,00</span></div>
-              <div class="porcao-row"><span class="p-num">48</span><div class="p-info"><strong>Chilano</strong><small>Garrafa</small></div><span class="p-price">R$ 50,00</span></div>
-            </div>
-          </div>
-          <div class="bebidas-col">
-            <div class="bebidas-col-title">🥤 Refri &amp; Sucos</div>
-            <div class="porcoes-list-grid">
-              <div class="porcao-row"><span class="p-num">30</span><div class="p-info"><strong>Refrigerante Lata</strong></div><span class="p-price">R$ 6,00</span></div>
-              <div class="porcao-row"><span class="p-num">31</span><div class="p-info"><strong>Refrigerante 1 Lt</strong></div><span class="p-price">R$ 10,00</span></div>
-              <div class="porcao-row"><span class="p-num">32</span><div class="p-info"><strong>Suco Caixa 1 Lt</strong></div><span class="p-price">R$ 8,00</span></div>
-              <div class="porcao-row"><span class="p-num">33</span><div class="p-info"><strong>Suco Caixa 200ml</strong></div><span class="p-price">R$ 4,00</span></div>
-              <div class="porcao-row destaque"><span class="p-num">34</span><div class="p-info"><strong>Skindrop Ice 275ml</strong></div><span class="p-price">R$ 10,00</span></div>
-              <div class="porcao-row"><span class="p-num">37</span><div class="p-info"><strong>Energético</strong></div><span class="p-price">R$ 15,00</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ─── DOSES ──────────────────────────────────────────── -->
-      <div class="cat-panel" id="cat-drinks">
-        <div class="drinks-visual-grid">
-          <div class="drink-card">
-            <div class="drink-img"><img src="images/imgi_8_622057594_18073228265106264_9011134293181083772_n.jpg" alt="Caipirinha" loading="lazy" /></div>
-            <div class="drink-info"><span class="p-num">53</span><strong>Caipirinha</strong><span class="vm-price">R$ 15,00</span></div>
-          </div>
-          <div class="drink-card">
-            <div class="drink-img"><img src="images/imgi_8_622057594_18073228265106264_9011134293181083772_n.jpg" alt="Campiroska" loading="lazy" /></div>
-            <div class="drink-info"><span class="p-num">54</span><strong>Campiroska</strong><span class="vm-price">R$ 18,00</span></div>
-          </div>
-          <div class="drink-card">
-            <div class="drink-img"><img src="images/imgi_8_622057594_18073228265106264_9011134293181083772_n.jpg" alt="Whisky" loading="lazy" /></div>
-            <div class="drink-info"><span class="p-num">56</span><strong>Whisky Red Label</strong><span class="vm-price">R$ 20,00</span></div>
-          </div>
-        </div>
-        <div class="porcoes-list-grid" style="margin-top:24px">
-          <div class="porcao-row"><span class="p-num">49</span><div class="p-info"><strong>Cachaça</strong><small>a partir de</small></div><span class="p-price">R$ 5,00</span></div>
-          <div class="porcao-row"><span class="p-num">50</span><div class="p-info"><strong>Campari</strong></div><span class="p-price">R$ 12,00</span></div>
-          <div class="porcao-row"><span class="p-num">51</span><div class="p-info"><strong>Tequila</strong></div><span class="p-price">R$ 7,00</span></div>
-          <div class="porcao-row destaque"><span class="p-num">52</span><div class="p-info"><strong>José Cuervo</strong></div><span class="p-price">R$ 20,00</span></div>
-          <div class="porcao-row"><span class="p-num">55</span><div class="p-info"><strong>Preparo Cozumel</strong></div><span class="p-price">R$ 10,00</span></div>
-          <div class="porcao-row"><span class="p-num">57</span><div class="p-info"><strong>Whisky Old Parr</strong></div><span class="p-price">R$ 20,00</span></div>
-          <div class="porcao-row"><span class="p-num">58</span><div class="p-info"><strong>Whisky Chivas</strong></div><span class="p-price">R$ 20,00</span></div>
-          <div class="porcao-row"><span class="p-num">59</span><div class="p-info"><strong>Jack Daniels</strong></div><span class="p-price">R$ 20,00</span></div>
-          <div class="porcao-row destaque"><span class="p-num">60</span><div class="p-info"><strong>Cachaça Premium</strong><small>a partir de</small></div><span class="p-price">R$ 8,00</span></div>
-        </div>
-      </div>
-
-      <!-- ─── ÁGUAS ──────────────────────────────────────────── -->
-      <div class="cat-panel" id="cat-aguas">
-        <div class="porcoes-list-grid">
-          <div class="porcao-row"><span class="p-num">38</span><div class="p-info"><strong>Água Mineral 500ml</strong></div><span class="p-price">R$ 3,00</span></div>
-          <div class="porcao-row destaque"><span class="p-num">39</span><div class="p-info"><strong>Água Mineral c/ Gás 900ml</strong></div><span class="p-price">R$ 5,00</span></div>
-          <div class="porcao-row"><span class="p-num">40</span><div class="p-info"><strong>Água Tônica</strong></div><span class="p-price">R$ 6,00</span></div>
-          <div class="porcao-row"><span class="p-num">41</span><div class="p-info"><strong>Água de Coco 200ml</strong></div><span class="p-price">R$ 5,00</span></div>
-          <div class="porcao-row"><span class="p-num">42</span><div class="p-info"><strong>H2K Limoneto</strong></div><span class="p-price">R$ 8,00</span></div>
-          <div class="porcao-row"><span class="p-num">51</span><div class="p-info"><strong>51 Ice 275ml</strong></div><span class="p-price">R$ 7,00</span></div>
-        </div>
       </div>
 
       <div class="menu-cta reveal-up">
@@ -779,6 +505,7 @@
     <span class="whatsapp-pulse"></span>
   </a>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
