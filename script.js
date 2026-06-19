@@ -135,6 +135,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ── GALERIA SWIPER INITIALIZATION ───────────────────────── */
+  const galeriaSwiperEl = document.querySelector('.galeriaSwiper');
+  if (galeriaSwiperEl && typeof Swiper !== 'undefined') {
+    new Swiper('.galeriaSwiper', {
+      slidesPerView: 1.2,
+      spaceBetween: 16,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.galeria-section .swiper-button-next',
+        prevEl: '.galeria-section .swiper-button-prev',
+      },
+      pagination: {
+        el: '.galeria-section .swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: { slidesPerView: 2.2, spaceBetween: 20 },
+        1024: { slidesPerView: 3.5, spaceBetween: 24 }
+      }
+    });
+  }
+
 
   /* ── GALLERY LIGHTBOX (Simple) ───────────────────────────── */
   const galleryItems = document.querySelectorAll('.gallery-item');
